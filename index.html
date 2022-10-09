@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tindog First Meeting Details</title>
+    <meta name="description" content="Tindog first group meeting details">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <center>
+            <h1>Tindog Weekly Group Meeting</h1>
+            <h3>Brainstorming & Fixing Bugs</h3>
+            <h3>2020/3/18</h3>
+        </center>
+    </header>
+
+    <main>
+        <section class="attendies">
+            <h2>Attendance list</h2>
+            <ul>
+                <li>Jack Wang</li>
+                <li>Alicia Timer</li>
+                <li>Sun Diego</li>
+                <li>Mark Silver</li>
+                <li>Bruce Jackson</li>
+            </ul>
+        </section>
+
+        <section class="meeting-topics">
+            <h2>Topics Covered:</h2>
+            <ul>
+                <li>Solve Unfinished Problem from Last Meeting</li>
+                <li>Discuss new Topics</li>
+                <li>Address people's concern</li>
+            </ul>
+            <section class="leftovers">
+                <h3>Unfinished from last meeting:</h3>
+                <ol>
+                    <li>The swipe bug: fix or not</li>
+                    <li>Update UI for user or not</li>
+                </ol>
+            </section>
+            <section class="new-topic">
+                <h3>New Topics</h3>
+                <ol>
+                    <li>New features about matching survey</li>
+                    <li>Complaint regarding to image bugs</li>
+                    <li>Update to adapt to new React version</li>
+                    <li>Update of databases</li>
+                </ol>
+            </section>
+
+            <section class="questions">
+                <h3>Some concerns & comments Addressed</h3>
+                <ol>
+                    <li>Should we delete the comment function? No one seems to like it</li>
+                    <li>Do we need to add new teams for addressing complaint?</li>
+                </ol>
+            </section>
+        </section>
+
+        <section class="Images">
+            <h3>Some Selected Image Presented in Meeting:</h3> <br>
+            <img width="24%" src="images/pic1.png" alt="Tindog in meeting">
+            <img width="24%" src="https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29tcHV0ZXIlMjBzY2llbmNlfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="Pic hack in meeting">
+            <img width="24%" src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191016135223/What-is-Algorithm_-1024x631.jpg" alt="Pic algorithm in meeting">
+            <img width="24%" src="https://www.mixvoip.com/assets/tablet-with-a-bug-1024x727-1.jpg" alt="Pic bug in meeting">
+        </section>
+
+        <section class="video">
+            <h3>Meeting Video</h3>
+            <video width="320" height="240" controls>
+                <source src="videos/ogg.ogg" type="video/ogg">
+            </video>
+        </section>
+
+        <section class="audio">
+            <h3>Meeting Audio</h3>
+            <audio src="audios/meetingaudio.mp3" controls>
+            </audio>
+        </section>
+
+        <section class="questions">
+            <div>
+                <p>
+                    <i>If you have additional questions or problems that you
+                        want to bring up in next meeting, <b>please fill out the
+                            form below.</b></i>
+                    <hr>
+                </p>
+            </div>
+            <form action="">
+                <fieldset>
+                    Do you have... <br>
+                    <input type="checkbox"> questions or
+                    <input type="checkbox" name="" id=""> concerns? <br>
+
+                    Select how you want to be contacted with: <br>
+                    <input type="radio" id="phone" name="contact" value="Phone">
+                    <label for="phone">Phone</label><br>
+
+                    <input type="radio" id="email" name="contact" value="Email">
+                    <label for="email">Email</label><br>
+
+                    <input type="radio" id="in-office" name="contact" value="In Office">
+                    <label for="in-office">In the Office</label><br>
+
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName"> <br>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName"> <br>
+
+                    <label for="question">Question or Concerns you have:</label><br>
+                    <textarea name="question" id="question" cols="30" rows="10">
+
+                    </textarea><br>
+                    I am a : <br>
+                    <input list="jobs" name="job" id="job">
+                    <datalist id="jobs">
+                        <option value="Software Engineer">
+                        <option value="Test Engineer">
+                        <option value="UI Enginner">
+                        <option value="UI Designer">
+                    </datalist><br>
+
+                    I am : <br>
+                    <select name="issues" id="issues">
+                        <option value="related">Related to this issue</option>
+                        <option value="find">Found this issue</option>
+                        <option value="remind">Reminded of this issue</option>
+                        <option value="Solve">Solving this issue</option>
+                    </select><br>
+
+                    Submitted in <input type="date">
+                    <button type="button">Submit</button>
+                </fieldset>
+            </form>
+            <details>
+                <summary>
+                    <strong>********Reminders********</strong>
+                </summary>
+                <span>
+                    <em>Don't forget to <b>email <a href="https://mail.google.com/">us</a> visualization</b> of problem if you could.<br>
+                        Thanks! </em>
+                </span>
+            </details>
+            <hr>
+        </section>
+
+        <nav>
+            <a href="https://zoom.us/">Technical Issues</a> |
+            <a href="https://docs.google.com/document/u/0/">Reference Document</a> |
+            <a href="https://w3dong.github.io/Tindog/">Contact us</a>
+        </nav>
+
+    </main>
+
+    <footer>
+        <strong>*If you have trouble loading the videos or audio of meeting,
+            you can download them at Tindogs' website.*</strong>
+    </footer>
+
+</body>
+
+</html>
