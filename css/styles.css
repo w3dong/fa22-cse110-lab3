@@ -107,6 +107,11 @@ span + p{
         font-size: smaller;
     }
 }
+/*Attribute */
+a[href="https://zoom.us/]{
+    color:blue;
+}
+
 /*display check*/
 .hide{
     display:none;
