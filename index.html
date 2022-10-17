@@ -4,7 +4,14 @@
 <head>
     <title>Tindog First Meeting Details</title>
     <meta name="description" content="Tindog first group meeting details">
+    <!---Favicon-->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!---External CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!---Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -33,43 +40,95 @@
                 <li>Discuss new Topics</li>
                 <li>Address people's concern</li>
             </ul>
-            <section class="leftovers">
-                <h3>Unfinished from last meeting:</h3>
-                <ol>
-                    <li>The swipe bug: fix or not</li>
-                    <li>Update UI for user or not</li>
-                </ol>
-            </section>
-            <section class="new-topic">
-                <h3>New Topics</h3>
-                <ol>
-                    <li>New features about matching survey</li>
-                    <li>Complaint regarding to image bugs</li>
-                    <li>Update to adapt to new React version</li>
-                    <li>Update of databases</li>
-                </ol>
-            </section>
+            <div class="flex-container">
+                <div class="leftovers item">
+                    <h3>Unfinished from last meeting:</h3>
+                    <ol>
+                        <li>The swipe bug: fix or not</li>
+                        <li>Update UI for user or not</li>
+                    </ol>
+                </div>
+                <div class="new-topic item">
+                    <h3>New Topics</h3>
+                    <ol>
+                        <li>New features about matching survey</li>
+                        <li>Complaint regarding to image bugs</li>
+                        <li>Update to adapt to new React version</li>
+                        <li>Update of databases</li>
+                    </ol>
+                </div>
+                <div class="questions item">
+                    <h3>Some concerns & comments Addressed</h3>
+                    <ol>
+                        <li>Should we delete the comment function? No one seems to like it</li>
+                        <li>Do we need to add new teams for addressing complaint?</li>
+                    </ol>
+                </div>
+            </div>
 
-            <section class="questions">
-                <h3>Some concerns & comments Addressed</h3>
-                <ol>
-                    <li>Should we delete the comment function? No one seems to like it</li>
-                    <li>Do we need to add new teams for addressing complaint?</li>
-                </ol>
-            </section>
         </section>
 
-        <section class="Images">
+        <section class="images">
             <h3>Some Selected Image Presented in Meeting:</h3> <br>
-            <img width="350" src="images/pic1.png" alt="Tindog in meeting">
-            <img width="350"
+            <div class="grid-container">
+                <div class="pic1 pic">
+                    <img id="img-tindog" src="images/pic1.png" alt="Tindog in meeting">
+                </div>
+                <div class="pic2 pic">
+                    <img id="img-hack"
                 src="https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29tcHV0ZXIlMjBzY2llbmNlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
                 alt="Pic hack in meeting">
-            <img width="350"
+                </div>
+                <div class="pic3 pic">
+                    <img id="img-alg"
                 src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191016135223/What-is-Algorithm_-1024x631.jpg"
                 alt="Pic algorithm in meeting">
-            <img width="300" src="https://www.mixvoip.com/assets/tablet-with-a-bug-1024x727-1.jpg"
-                alt="Pic bug in meeting">
+                </div>
+                <div class="pic4 pic">
+                    <img id="img-bug" style="width:300px; padding: 25px 50px 25px 50px; margin: 15px 20px 15px 20px;"
+                src="https://www.mixvoip.com/assets/tablet-with-a-bug-1024x727-1.jpg" alt="Pic bug in meeting">
+                </div>
+            </div>
+
+            <style>
+                .images {
+                    border-style: dashed;
+                    border-color: azure;
+                    border-width: 1px;
+                    border-radius: 2%;
+                    padding: 25px 50px 25px 50px;
+                    margin: auto;
+                    display: block;
+                    position: relative;
+                }
+
+                #img-tindog {
+                    width: 100mm;
+                    height: 65mm;
+                    max-width: fit-content;
+                    min-width: none;
+                    margin: auto;
+                    padding: 25px 50px 25px 50px;
+                }
+
+                #img-hack {
+                    width: 300px;
+                    margin: 15px 20px 15px 20px;
+                    padding-top: 25px;
+                    padding-bottom: 25px;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                }
+
+                #img-alg {
+                    width: 4in;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    padding: 25px 20px 25px 20px;
+                }
+            </style>
         </section>
 
         <section class="video">
@@ -140,7 +199,7 @@
                     </select><br>
 
                     Submitted in <input type="date">
-                    <button type="button">Submit</button>
+                    <button type="button" id="submit-btn">Submit</button>
                 </fieldset>
             </form>
             <details>
@@ -161,7 +220,7 @@
             <a href="https://docs.google.com/document/u/0/">Reference Document</a> |
             <a href="https://w3dong.github.io/Tindog/">Contact us</a>
         </nav>
-
+        <button class="hide">Hiding..</button>
     </main>
 
     <footer>
