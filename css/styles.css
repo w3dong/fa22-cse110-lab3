@@ -108,7 +108,7 @@ span + p{
     }
 }
 /*Attribute selector*/
-a[href="https://zoom.us/]{
+a[href="https://zoom.us/"]{
     color:blue;
 }
 
