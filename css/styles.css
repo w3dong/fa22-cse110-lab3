@@ -107,7 +107,7 @@ span + p{
         font-size: smaller;
     }
 }
-/*Attribute */
+/*Attribute selector*/
 a[href="https://zoom.us/]{
     color:blue;
 }
